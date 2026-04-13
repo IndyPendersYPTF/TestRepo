@@ -7,6 +7,7 @@ plc = pyads.Connection('5.108.194.44.1.1', pyads.PORT_TC3PLC1)
 plc.open()
 
 counter = 0
+counter2 = 0
 real_val = plc.get_symbol("Main.real_val", auto_update=True)
 
 while counter2 < 100:
