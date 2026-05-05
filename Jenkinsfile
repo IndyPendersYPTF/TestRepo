@@ -1,17 +1,11 @@
-
 pipeline {
-  agent any
-  stages {
-    stage('Print') {
-      steps {
-        echo 'this works'
-      }
+    agent any
+
+    stages {
+        stage('Run CODESYS Simulation') {
+            steps {
+                bat '"C:\\Program Files\\CODESYS 3.5.16.6\\CODESYS\\Common\\CODESYS.exe" --noUI --runscript="C:\\scripts\\run_simulation.py"'
+            }
+        }
     }
-    stage('TEST') {
-      steps {
-        bat 'C:\\Users\\TA\\AppData\\Local\\Programs\\Python\\Python312\\python.exe Test.py'
-      }
-    }
-    
-  }
 }
