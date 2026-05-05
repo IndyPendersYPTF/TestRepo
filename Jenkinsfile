@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run CODESYS Simulation') {
             steps {
-                bat '"C:\\Program Files\\CODESYS 3.5.16.6\\CODESYS\\Common\\CODESYS.exe" --noUI --runscript="C:\\scripts\\run_simulation.py"'
+                bat '"C:\\Program Files\\CODESYS 3.5.16.6\\CODESYS\\Common\\CODESYS.exe" --noUI --runscript="C:\\Users\\TA\\Desktop\\Codesys test\\run_simulation.py"'
             }
         }
     }
